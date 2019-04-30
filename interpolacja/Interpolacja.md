@@ -1,17 +1,3 @@
-
-
-```julia
-Pkg.add("Polynomials")
-```
-
-    [32m[1m Resolving[22m[39m package versions...
-    [32m[1m  Updating[22m[39m `~/.julia/Project.toml`
-    [90m [no changes][39m
-    [32m[1m  Updating[22m[39m `~/.julia/Manifest.toml`
-    [90m [no changes][39m
-
-
-
 ```julia
 using Polynomials
 using Plots
@@ -106,35 +92,6 @@ end
 
 
 
-
-```julia
-
-```
-
-
-```julia
-
-```
-
-
-```julia
-
-```
-
-
-```julia
-
-```
-
-
-```julia
-
-```
-
-
-```julia
-
-```
 
 
 ```julia
@@ -337,18 +294,3 @@ scatter!(xs, Y, label="Points used for interpolation")
 ![svg](output_18_0.svg)
 
 
-
-
-```julia
-
-```
-
-
-```julia
-
-```
-
-
-```julia
-
-```
