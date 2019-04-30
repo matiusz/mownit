@@ -1,10 +1,6 @@
-```julia
-using Polynomials
-using Plots
-using DataFrames
-using Statistics
-```
 
+Funkcja obliczająca wielomiany potrzebne do stworzenie wielomianu aproksumującego Lagrange'a
+============================================================================================
 
 ```julia
 function L(Pts, k)
@@ -27,6 +23,9 @@ end
 
 
 
+Funkcja obliczająca wielomian aproksymujący
+===========================================
+
 ```julia
 function interpolateLG(Pts)
     p=Poly([0])
@@ -45,7 +44,8 @@ end
     interpolateLG (generic function with 1 method)
 
 
-
+Funkcja obliczająca ilorazy różnicowe potrzebne w metodzie Newtona
+==================================================================
 
 ```julia
 function divdiff(Pts)
@@ -70,6 +70,9 @@ end
 
 
 
+Funkcja tworząca wielomian aproksymujący za pomocą metody Newtona
+=================================================================
+
 ```julia
 function interpolateNewton(Pts)
 div=divdiff(Pts)
@@ -93,8 +96,12 @@ end
 
 
 
+Testy każdej z funkcji interpolujących
+======================================
 
 ```julia
+
+
 data=DataFrame(Size = Int[], Time = Float64[], Mode = Int[])
 i = 1
 for i=1:100:501
