@@ -136,7 +136,7 @@ Wyniki testów
 
 ![svg](output_13_0.svg)
 
-Jak widać, z dwóch napisanych funkcji metoda Newtona oferuje krótszy czas działania, nadal jest jednak wolniejsza od funkcji polyfit wbudowanej w pakiet Polynomials w języku Julia
+Jak widać, z dwóch napisanych funkcji metoda Newtona oferuje krótszy czas działania, nadal jest jednak wolniejsza od funkcji polyfit wbudowanej w pakiet Polynomials w języku Julia.
 
 
 
@@ -154,5 +154,5 @@ scatter!(xs, Y, label="Points used for interpolation")
 
 ![svg](output_18_0.svg)
 
-Wszystkie funkcje oferują w badanym obszarze podobną dokładność. Jak widać, na krańcach przedziału, w którym dokonywaliśmy interpolacji dokładność naszego przybliżenia jest coraz mniejsza. 
+Wszystkie funkcje oferują w badanym obszarze podobną dokładność. Jak widać, na krańcach przedziału, w którym dokonywaliśmy interpolacji, dokładność naszego przybliżenia jest coraz mniejsza. Aby tego uniknąć należałoby zwiększyć gęstość punktów wokół których aproksymujemy na krańcach przedziałów. Unikniemy w ten sposób skutków efektu Rungego potęgowanego przez równoodległość punktów.
 
